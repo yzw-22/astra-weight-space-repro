@@ -20,7 +20,10 @@ python figures/make_figures.py --repo . --out /tmp/figs
   attempts fall between 0.05 and 0.085, so on that game the horizontal spread —
   surviving longer — is what separates the models, not the per-step rate.
 
-## `fig2_depth_variance.png` — the mechanism and the noise
+`fig1_scores.png` is the hero figure used in the top-level README and in
+`docs/REPORT.md` §3.1.
+
+## `fig2_depth_variance.png` — the mechanism and the noise (report only)
 
 * **C** Breakout survival by look-ahead depth: brick-bounce-aware prediction
   (Astra) → wall-only projection (best Flash attempt) → tracking the current
@@ -36,3 +39,8 @@ Helvetica Neue, no top/right spines, light x-grid only, one colour per model
 (teal / amber / violet) reused across every panel, direct labels instead of
 legends wherever possible. Output is 300 dpi PNG plus SVG (text stays editable);
 both are drawn from the same code path, so they never drift apart.
+
+Type is sized for reading at 100 % zoom on a normal screen: 11.5 pt base,
+10 pt ticks, 10.5 pt value labels, nothing below 9 pt, and all annotation grey
+darkened to `#4B5563` so it survives compression on GitHub and on social
+previews. The figures are 13.6 x 5.9 in and 12.6 x 5.6 in.

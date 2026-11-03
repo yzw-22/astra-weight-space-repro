@@ -31,7 +31,7 @@ GAME_LABEL = {"breakout": "Breakout", "asterix": "Asterix", "seaquest": "Seaques
 COLOR = {"astra": "#0F6E6E", "flash": "#D97706", "v4pro": "#6D4AA6"}
 MARKER = {"astra": "o", "flash": "s", "v4pro": "^"}
 INK = "#111827"
-MUTED = "#6B7280"
+MUTED = "#4B5563"
 
 # the paper's one-shot Astra scores and PPO baselines (blog table, 2026-11-02)
 PAPER = {
@@ -45,23 +45,23 @@ def house_style():
     plt.rcParams.update({
         "font.family": "sans-serif",
         "font.sans-serif": ["Helvetica Neue", "Arial", "DejaVu Sans"],
-        "font.size": 9,
+        "font.size": 11.5,
         "text.color": INK,
-        "axes.labelcolor": "#374151",
-        "axes.edgecolor": "#D1D5DB",
+        "axes.labelcolor": "#1F2937",
+        "axes.edgecolor": "#9CA3AF",
         "axes.linewidth": 0.8,
-        "axes.titlesize": 10,
+        "axes.titlesize": 13,
         "axes.titleweight": "semibold",
         "axes.spines.top": False,
         "axes.spines.right": False,
-        "xtick.color": "#4B5563",
-        "ytick.color": "#4B5563",
-        "xtick.labelsize": 8,
-        "ytick.labelsize": 8,
+        "xtick.color": "#374151",
+        "ytick.color": "#374151",
+        "xtick.labelsize": 10,
+        "ytick.labelsize": 10,
         "grid.color": "#E5E7EB",
         "grid.linewidth": 0.7,
         "legend.frameon": False,
-        "legend.fontsize": 8,
+        "legend.fontsize": 10,
         "savefig.dpi": 300,
     })
 
@@ -91,15 +91,15 @@ def load_random(repo):
 
 
 def panel_letter(ax, letter, title, x=-0.02, y=1.16):
-    ax.text(x, y, f"{letter}", transform=ax.transAxes, fontsize=11,
+    ax.text(x, y, f"{letter}", transform=ax.transAxes, fontsize=14,
             fontweight="bold", color=INK, va="top")
-    ax.text(x + 0.045, y, title, transform=ax.transAxes, fontsize=10,
+    ax.text(x + 0.045, y, title, transform=ax.transAxes, fontsize=12.5,
             color=INK, va="top")
 
 
 def fig_scores(data, rand, out_dir):
-    fig = plt.figure(figsize=(12.2, 5.0))
-    gs = fig.add_gridspec(1, 2, width_ratios=[1.05, 1.0], wspace=0.26,
+    fig = plt.figure(figsize=(13.6, 5.9))
+    gs = fig.add_gridspec(1, 2, width_ratios=[1.05, 1.0], wspace=0.24,
                           left=0.105, right=0.985, top=0.855, bottom=0.135)
     ax_a = fig.add_subplot(gs[0, 0])
     ax_b = fig.add_subplot(gs[0, 1])
@@ -110,7 +110,7 @@ def fig_scores(data, rand, out_dir):
     ax.set_xlim(0.04, 2000)
     ax.set_ylim(-0.90, 3.28)
     ax.set_yticks([0.08, 1.38, 2.68])
-    ax.set_yticklabels([GAME_LABEL[g] for g in reversed(GAMES)], fontsize=9.5,
+    ax.set_yticklabels([GAME_LABEL[g] for g in reversed(GAMES)], fontsize=12,
                        fontweight="semibold")
     ax.tick_params(axis="y", length=0, pad=8)
     ax.grid(axis="x", which="major")
@@ -129,7 +129,7 @@ def fig_scores(data, rand, out_dir):
         ax.scatter([ref["astra"]], [lane_ref], marker="D", s=40,
                    facecolor="white", edgecolor="#6B7280", linewidth=1.1, zorder=4)
         ax.text(ref["astra"], lane_ref + 0.14, f"{ref['astra']:g}", ha="center",
-                va="bottom", fontsize=7.8, color=MUTED)
+                va="bottom", fontsize=10.5, color=MUTED)
 
         for arm in ARMS:
             rows = data[arm][game]
@@ -142,7 +142,7 @@ def fig_scores(data, rand, out_dir):
             ax.plot([m, m], [lane_model - 0.16, lane_model - 0.02], color=COLOR[arm],
                     lw=0.8, alpha=0.35, zorder=3)
             ax.text(m, lane_model - 0.19, f"{m:.1f}", ha="center", va="top",
-                    fontsize=7.8, color=COLOR[arm], fontweight="semibold")
+                    fontsize=10.5, color=COLOR[arm], fontweight="semibold")
 
     ax.set_xlabel("score per episode (log scale)", labelpad=6)
     panel_letter(ax, "A", "Scores, 1,000 episodes \u00d7 3 attempts", x=-0.10, y=1.06)
@@ -158,10 +158,10 @@ def fig_scores(data, rand, out_dir):
     xs = np.array([35, 12000])
     for rate in (0.01, 0.03, 0.1):
         ax.plot(xs, rate * xs, color="#D1D5DB", lw=0.9, ls=(0, (4, 3)), zorder=1)
-    ax.text(40, 150, "dashed lines: reward per step\n"
+    ax.text(42, 300, "dashed lines: reward per step\n"
                      "0.01 \u00b7 0.03 \u00b7 0.10\n"
                      "Breakout attempts: 0.05\u20130.085",
-            fontsize=7.2, color="#9CA3AF", va="top", ha="left", linespacing=1.6)
+            fontsize=9.8, color="#4B5563", va="top", ha="left", linespacing=1.55)
 
     for arm in ARMS:
         for game in GAMES:
@@ -171,7 +171,7 @@ def fig_scores(data, rand, out_dir):
                            linewidth=0.8, zorder=3)
 
     ax.annotate("survives 4,847 steps\nbut scores 0.15",
-                xy=(4847, 0.147), xytext=(120, 0.055), fontsize=7.5, color=MUTED,
+                xy=(4847, 0.147), xytext=(110, 0.050), fontsize=9.8, color=MUTED,
                 arrowprops=dict(arrowstyle="-", color="#D1D5DB", lw=0.9,
                                 connectionstyle="arc3,rad=-0.25"))
 
@@ -198,12 +198,12 @@ def fig_scores(data, rand, out_dir):
     fig.text(0.105, 0.028,
              "Sources: runs/ in this repository (3 attempts \u00d7 1,000 episodes); "
              "PPO and paper Astra from the paper; random measured with this harness.",
-             fontsize=7.5, color="#9CA3AF")
+             fontsize=9.2, color="#4B5563")
     return save(fig, out_dir / "fig1_scores")
 
 
 def fig_depth(data, out_dir):
-    fig = plt.figure(figsize=(11.4, 5.0))
+    fig = plt.figure(figsize=(12.6, 5.6))
     gs = fig.add_gridspec(3, 2, width_ratios=[1.16, 1.0], hspace=0.60,
                           wspace=0.16, left=0.175, right=0.975, top=0.84, bottom=0.15)
     ax_c = fig.add_subplot(gs[:, 0])
@@ -225,7 +225,7 @@ def fig_depth(data, out_dir):
     ax.set_ylim(-0.7, len(groups) - 0.15)
     ypos = list(range(len(groups)))[::-1]
     ax.set_yticks(ypos)
-    ax.set_yticklabels([g[0] for g in groups], fontsize=8.5, linespacing=1.4)
+    ax.set_yticklabels([g[0] for g in groups], fontsize=10.5, linespacing=1.4)
     ax.tick_params(axis="y", length=0)
     ax.grid(axis="x", which="major")
     ax.spines["left"].set_visible(False)
@@ -233,14 +233,17 @@ def fig_depth(data, out_dir):
     means = []
     for y, (_, vals, arm) in zip(ypos, groups):
         vals = np.asarray(vals, dtype=float)
-        ys = y + (np.linspace(-0.11, 0.11, len(vals)) if len(vals) > 1 else 0.0)
+        if vals.size == 0:
+            continue
+        ys = y + (np.linspace(-0.11, 0.11, len(vals)) if len(vals) > 1
+                  else np.zeros(len(vals)))
         ax.scatter(vals, ys, s=46, color=COLOR[arm], edgecolor="white",
                    linewidth=0.7, zorder=3)
         m = float(vals.mean())
         means.append(m)
         ax.plot([vals.min(), vals.max()], [y, y], color=COLOR[arm], lw=1.6,
                 alpha=0.30, solid_capstyle="round", zorder=2)
-        ax.text(vals.max() * 1.14, y, f"{m:,.0f}", fontsize=8.5, color=COLOR[arm],
+        ax.text(vals.max() * 1.14, y, f"{m:,.0f}", fontsize=10.5, color=COLOR[arm],
                 ha="left", va="center", fontweight="semibold")
 
     for i in range(1, len(means)):
@@ -249,7 +252,7 @@ def fig_depth(data, out_dir):
         ax.annotate("", xy=(x, ypos[i - 1] - 0.30), xytext=(x, ypos[i] + 0.30),
                     arrowprops=dict(arrowstyle="<->", color="#B6BCC4", lw=1.0))
         ax.text(x * 1.07, (ypos[i - 1] + ypos[i]) / 2, f"\u00d7{ratio:.1f}",
-                fontsize=8, color=MUTED, ha="left", va="center")
+                fontsize=10, color=MUTED, ha="left", va="center")
 
     ax.set_xlabel("mean episode length, in steps (log scale)", labelpad=8)
     panel_letter(ax, "C", "Breakout: survival tracks look-ahead depth",
@@ -266,7 +269,7 @@ def fig_depth(data, out_dir):
         ax.grid(axis="y", which="major")
         paper = PAPER[game]["astra"]
         ax.axhline(paper, color="#B6BCC4", lw=0.9, ls=(0, (3, 3)), zorder=1)
-        ax.text(3.0, paper * 1.12, f"paper {paper:g}", fontsize=7, color=MUTED,
+        ax.text(3.0, paper * 1.12, f"paper {paper:g}", fontsize=9, color=MUTED,
                 ha="right", va="bottom")
 
         for i, arm in enumerate(ARMS):
@@ -286,14 +289,14 @@ def fig_depth(data, out_dir):
                         elinewidth=1.3, capsize=4, capthick=1.3, zorder=4)
             ax.plot([i - 0.20, i + 0.20], [m, m], color=COLOR[arm], lw=1.8, zorder=5)
 
-        ax.set_title(GAME_LABEL[game], fontsize=8.5, loc="left", pad=3,
+        ax.set_title(GAME_LABEL[game], fontsize=10.5, loc="left", pad=3,
                      color="#374151", fontweight="semibold")
         ax.tick_params(axis="x", length=0)
         ax.spines["bottom"].set_visible(False)
         if game != GAMES[-1]:
             ax.tick_params(axis="x", labelbottom=False)
         else:
-            ax.set_xticklabels(["Astra", "Flash", "Pro"], fontsize=8.5)
+            ax.set_xticklabels(["Astra", "Flash", "Pro"], fontsize=10.5)
 
     axes_d[0].set_ylabel("score (log)", labelpad=4)
     panel_letter(axes_d[0], "D", "Every point is 3 samples", x=-0.36, y=1.62)
@@ -302,7 +305,7 @@ def fig_depth(data, out_dir):
              "C: one dot per attempt, bar spans the observed range, label is the mean. "
              "D: dashed line = the paper's single sample; bar = mean of three attempts, "
              "whisker = standard error.",
-             fontsize=7.5, color="#9CA3AF")
+             fontsize=9.2, color="#4B5563")
     return save(fig, out_dir / "fig2_depth_variance")
 
 
@@ -319,11 +322,16 @@ def save(fig, stem):
 def main():
     ap = argparse.ArgumentParser()
     here = pathlib.Path(__file__).resolve().parent
-    ap.add_argument("--repo", default=str(here.parent))
+    ap.add_argument("--repo", default=None,
+                    help="repository to read runs/ from (default: parent of this file)")
     ap.add_argument("--out", default=str(here / "out"))
     args = ap.parse_args()
 
-    repo = pathlib.Path(args.repo).resolve()
+    if args.repo:
+        repo = pathlib.Path(args.repo).resolve()
+    else:
+        repo = next((c for c in (here.parent, here.parent / "astra-weight-space-repro")
+                     if (c / "runs").exists()), here.parent)
     out = pathlib.Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
 
