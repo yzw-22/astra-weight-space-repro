@@ -1,0 +1,42 @@
+{
+ "game": "seaquest",
+ "attempts": 3,
+ "cost_usd": 4.6063,
+ "mean": 28.896666666666665,
+ "se": 7.4635323704291965,
+ "per_attempt": [
+  {
+   "game": "seaquest",
+   "attempt": 1,
+   "status": "ok",
+   "mean": 34.371,
+   "se": 0.9591221373080043,
+   "statements": 135,
+   "nonzero": 548,
+   "cost_usd": 1.439505,
+   "wall_s": 46.4
+  },
+  {
+   "game": "seaquest",
+   "attempt": 2,
+   "status": "ok",
+   "mean": 14.133,
+   "se": 0.4687697260447351,
+   "statements": 181,
+   "nonzero": 1269,
+   "cost_usd": 1.448305,
+   "wall_s": 22.4
+  },
+  {
+   "game": "seaquest",
+   "attempt": 3,
+   "status": "ok",
+   "mean": 38.186,
+   "se": 1.0206993833794704,
+   "statements": 177,
+   "nonzero": 1747,
+   "cost_usd": 1.718505,
+   "wall_s": 56.0
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "provider": "deepseek",
+ "model": "deepseek-flash",
+ "base_url": "https://api.deepseek.com",
+ "temperature": 1.0,
+ "max_tokens": 131072,
+ "reasoning_effort": "max",
+ "finish_reason": "stop",
+ "truncated": false,
+ "usage": {
+  "completion_tokens": 81890,
+  "prompt_tokens": 2731,
+  "total_tokens": 84621,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 75857,
+   "rejected_prediction_tokens": null,
+   "text_tokens": null
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": null,
+   "cache_write_tokens": null,
+   "cached_tokens": 2560,
+   "image_tokens": null,
+   "text_tokens": null
+  },
+  "prompt_cache_hit_tokens": 2560,
+  "prompt_cache_miss_tokens": 171
+ },
+ "wall_s": 524.2,
+ "created": 1793692819
+}

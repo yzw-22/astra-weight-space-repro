@@ -1,0 +1,11 @@
+{
+ "game": "breakout",
+ "model": "openai/gpt-6-astra",
+ "reasoning_effort": "xhigh",
+ "temperature": 1.0,
+ "max_tokens": 40960,
+ "attempt": 2,
+ "prompt_sha1": "c340c3ec590f4ebeb651f9b3e17e7eb721a3cce8",
+ "prompt_chars": 9973,
+ "started": 1793706911
+}

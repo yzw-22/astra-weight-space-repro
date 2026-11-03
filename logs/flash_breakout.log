@@ -1,0 +1,12 @@
+
+=== breakout attempt 1/3 (prompt 9973 chars, model deepseek-flash) ===
+  [llm] attempt 1 failed: Connection error.
+--- breakout attempt1: ok mean=12.6 ± 0.5 (8.0s)
+
+=== breakout attempt 2/3 (prompt 9973 chars, model deepseek-flash) ===
+--- breakout attempt2: ok mean=69.8 ± 2.3 (37.0s)
+
+=== breakout attempt 3/3 (prompt 9973 chars, model deepseek-flash) ===
+--- breakout attempt3: ok mean=13.9 ± 0.5 (5.6s)
+
+breakout: mean 32.1 ± 18.8 over 3 attempt(s)

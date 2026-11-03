@@ -1,0 +1,13 @@
+{
+ "game": "breakout",
+ "episodes": 1000,
+ "mean": 69.752,
+ "se": 2.3367924801092403,
+ "max": 525.0,
+ "mean_length": 1057.37,
+ "wall_s": 37.0,
+ "weights": "runs/flash/breakout/attempt2/weights.npz",
+ "statements": 108,
+ "applied": 108,
+ "nonzero_total": 933
+}

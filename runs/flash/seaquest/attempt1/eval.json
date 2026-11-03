@@ -1,0 +1,13 @@
+{
+ "game": "seaquest",
+ "episodes": 1000,
+ "mean": 0.643,
+ "se": 0.025888631119107504,
+ "max": 5.0,
+ "mean_length": 70.089,
+ "wall_s": 4.1,
+ "weights": "runs/flash/seaquest/attempt1/weights.npz",
+ "statements": 382,
+ "applied": 382,
+ "nonzero_total": 3429
+}

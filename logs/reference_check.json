@@ -1,0 +1,95 @@
+{
+ "prompts": {
+  "asterix": {
+   "chars": 10930,
+   "expected": 10930,
+   "match": true,
+   "byte_identical_to_released": true
+  },
+  "breakout": {
+   "chars": 9973,
+   "expected": 9973,
+   "match": true,
+   "byte_identical_to_released": true
+  },
+  "seaquest": {
+   "chars": 18266,
+   "expected": 18266,
+   "match": true,
+   "byte_identical_to_released": true
+  }
+ },
+ "weights": {
+  "asterix": {
+   "statements": 55,
+   "applied": 55,
+   "errors": 0,
+   "nonzero": {
+    "W1": 468,
+    "b1": 32,
+    "W2": 53,
+    "b2": 32,
+    "W3": 46,
+    "b3": 6
+   },
+   "max_abs_diff_vs_released_npz": 0.0,
+   "match": true
+  },
+  "breakout": {
+   "statements": 92,
+   "applied": 92,
+   "errors": 0,
+   "nonzero": {
+    "W1": 769,
+    "b1": 1,
+    "W2": 24,
+    "b2": 8,
+    "W3": 8,
+    "b3": 5
+   },
+   "max_abs_diff_vs_released_npz": 0.0,
+   "match": true
+  },
+  "seaquest": {
+   "statements": 122,
+   "applied": 122,
+   "errors": 0,
+   "nonzero": {
+    "W1": 364,
+    "b1": 32,
+    "W2": 350,
+    "b2": 25,
+    "W3": 26,
+    "b3": 6
+   },
+   "max_abs_diff_vs_released_npz": 0.0,
+   "match": true
+  }
+ },
+ "scores": {
+  "asterix": {
+   "game": "asterix",
+   "episodes": 100,
+   "mean": 55.31,
+   "se": 3.462167680876397,
+   "max": 202.0,
+   "mean_length": 885.33
+  },
+  "breakout": {
+   "game": "breakout",
+   "episodes": 100,
+   "mean": 508.13,
+   "se": 24.5116449546708,
+   "max": 803.0,
+   "mean_length": 7248.9
+  },
+  "seaquest": {
+   "game": "seaquest",
+   "episodes": 100,
+   "mean": 56.56,
+   "se": 4.421762526231349,
+   "max": 161.0,
+   "mean_length": 1485.84
+  }
+ }
+}

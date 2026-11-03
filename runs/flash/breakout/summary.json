@@ -1,0 +1,38 @@
+{
+ "game": "breakout",
+ "attempts": 3,
+ "mean": 32.096666666666664,
+ "se": 18.831487331358378,
+ "per_attempt": [
+  {
+   "game": "breakout",
+   "attempt": 1,
+   "status": "ok",
+   "mean": 12.612,
+   "se": 0.4755834686315701,
+   "statements": 154,
+   "nonzero": 775,
+   "wall_s": 8.0
+  },
+  {
+   "game": "breakout",
+   "attempt": 2,
+   "status": "ok",
+   "mean": 69.752,
+   "se": 2.3367924801092403,
+   "statements": 108,
+   "nonzero": 933,
+   "wall_s": 37.0
+  },
+  {
+   "game": "breakout",
+   "attempt": 3,
+   "status": "ok",
+   "mean": 13.926,
+   "se": 0.5102655141148527,
+   "statements": 221,
+   "nonzero": 1559,
+   "wall_s": 5.6
+  }
+ ]
+}

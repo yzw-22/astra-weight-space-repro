@@ -1,0 +1,12 @@
+
+=== seaquest attempt 1/3 (prompt 18266 chars, model deepseek-flash) ===
+  [llm] attempt 1 failed: Connection error.
+--- seaquest attempt1: ok mean=0.6 ± 0.0 (4.1s)
+
+=== seaquest attempt 2/3 (prompt 18266 chars, model deepseek-flash) ===
+--- seaquest attempt2: ok mean=0.0 ± 0.0 (30.7s)
+
+=== seaquest attempt 3/3 (prompt 18266 chars, model deepseek-flash) ===
+--- seaquest attempt3: ok mean=0.1 ± 0.0 (258.7s)
+
+seaquest: mean 0.3 ± 0.2 over 3 attempt(s)

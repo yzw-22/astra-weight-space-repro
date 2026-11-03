@@ -1,0 +1,13 @@
+{
+ "game": "breakout",
+ "episodes": 1000,
+ "mean": 468.769,
+ "se": 5.1441767264736535,
+ "max": 662.0,
+ "mean_length": 8459.63,
+ "wall_s": 266.6,
+ "weights": "runs/astra/breakout/attempt3/weights.npz",
+ "statements": 190,
+ "applied": 190,
+ "nonzero_total": 1866
+}

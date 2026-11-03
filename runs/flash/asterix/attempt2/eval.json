@@ -1,0 +1,13 @@
+{
+ "game": "asterix",
+ "episodes": 1000,
+ "mean": 3.276,
+ "se": 0.10915006980179966,
+ "max": 22.0,
+ "mean_length": 120.01,
+ "wall_s": 4.6,
+ "weights": "runs/flash/asterix/attempt2/weights.npz",
+ "statements": 217,
+ "applied": 217,
+ "nonzero_total": 612
+}

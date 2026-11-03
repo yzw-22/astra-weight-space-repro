@@ -1,0 +1,11 @@
+{
+ "game": "seaquest",
+ "model": "deepseek-flash",
+ "reasoning_effort": "max",
+ "temperature": 1.0,
+ "max_tokens": 131072,
+ "attempt": 2,
+ "prompt_sha1": "3e630597d5381c3806ad509e9cc03891711701b7",
+ "prompt_chars": 18266,
+ "started": 1793691714
+}

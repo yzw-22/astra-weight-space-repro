@@ -1,0 +1,11 @@
+{
+ "game": "seaquest",
+ "model": "openai/gpt-6-astra",
+ "reasoning_effort": "xhigh",
+ "temperature": 1.0,
+ "max_tokens": 40960,
+ "attempt": 3,
+ "prompt_sha1": "3e630597d5381c3806ad509e9cc03891711701b7",
+ "prompt_chars": 18266,
+ "started": 1793709094
+}

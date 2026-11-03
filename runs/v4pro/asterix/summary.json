@@ -1,0 +1,35 @@
+{
+ "game": "asterix",
+ "attempts": 3,
+ "mean": 1.4320000000000002,
+ "se": 0.7486156112006571,
+ "per_attempt": [
+  {
+   "game": "asterix",
+   "attempt": 1,
+   "status": "cached",
+   "mean": 0.518,
+   "se": 0.027284068985773006
+  },
+  {
+   "game": "asterix",
+   "attempt": 2,
+   "status": "ok",
+   "mean": 2.916,
+   "se": 0.1027691855835469,
+   "statements": 160,
+   "nonzero": 618,
+   "wall_s": 5.8
+  },
+  {
+   "game": "asterix",
+   "attempt": 3,
+   "status": "ok",
+   "mean": 0.862,
+   "se": 0.03837223512422006,
+   "statements": 129,
+   "nonzero": 628,
+   "wall_s": 3.7
+  }
+ ]
+}

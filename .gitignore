@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# secrets — never commit
+.env
+**/.env
+
+# local caches / generated output
+.mplcache/
+code/out/
+code/runs/
+runs/local/

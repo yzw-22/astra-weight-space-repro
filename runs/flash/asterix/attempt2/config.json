@@ -1,0 +1,11 @@
+{
+ "game": "asterix",
+ "model": "deepseek-flash",
+ "reasoning_effort": "max",
+ "temperature": 1.0,
+ "max_tokens": 131072,
+ "attempt": 2,
+ "prompt_sha1": "27164767ca65fa207531b956289db0462f28242c",
+ "prompt_chars": 10930,
+ "started": 1793691586
+}

@@ -1,0 +1,39 @@
+{
+ "provider": "ofox",
+ "model": "openai/gpt-6-astra",
+ "base_url": "https://api.ofox.io/v1",
+ "temperature": 1.0,
+ "max_tokens": 40960,
+ "reasoning_effort": "xhigh",
+ "finish_reason": "stop",
+ "truncated": false,
+ "usage": {
+  "completion_tokens": 28163,
+  "prompt_tokens": 2616,
+  "total_tokens": 30779,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": null,
+   "reasoning_tokens": 21453,
+   "rejected_prediction_tokens": null,
+   "text_tokens": null
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": null,
+   "cache_write_tokens": null,
+   "cached_tokens": 2613,
+   "image_tokens": null,
+   "text_tokens": null
+  }
+ },
+ "cost": {
+  "usd": 1.410793,
+  "input_uncached": 3,
+  "cached_read": 2613,
+  "cache_write": 0,
+  "output": 28163,
+  "tier": "<=272k"
+ },
+ "wall_s": 1779.3,
+ "created": 1793710697
+}

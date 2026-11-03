@@ -1,0 +1,10 @@
+=== breakout attempt 1/3 (prompt 9973 chars, model openai/gpt-6-astra) ===
+--- breakout attempt1: ok mean=537.3 ± 9.5 (163.0s)
+
+=== breakout attempt 2/3 (prompt 9973 chars, model openai/gpt-6-astra) ===
+--- breakout attempt2: ok mean=406.4 ± 5.4 (248.2s)
+
+=== breakout attempt 3/3 (prompt 9973 chars, model openai/gpt-6-astra) ===
+--- breakout attempt3: ok mean=468.8 ± 5.1 (266.6s)
+
+breakout: mean 470.8 ± 37.8 over 3 attempt(s)

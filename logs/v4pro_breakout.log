@@ -1,0 +1,11 @@
+
+=== breakout attempt 1/3 (prompt 9973 chars, model deepseek-v4-pro) ===
+--- breakout attempt1: ok mean=4.5 ± 0.1 (2.0s)
+
+=== breakout attempt 2/3 (prompt 9973 chars, model deepseek-v4-pro) ===
+--- breakout attempt2: ok mean=8.4 ± 0.3 (3.8s)
+
+=== breakout attempt 3/3 (prompt 9973 chars, model deepseek-v4-pro) ===
+--- breakout attempt3: ok mean=8.3 ± 0.3 (3.7s)
+
+breakout: mean 7.0 ± 1.3 over 3 attempt(s)

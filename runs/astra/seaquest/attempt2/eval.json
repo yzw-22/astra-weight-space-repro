@@ -1,0 +1,13 @@
+{
+ "game": "seaquest",
+ "episodes": 1000,
+ "mean": 14.133,
+ "se": 0.4687697260447351,
+ "max": 83.0,
+ "mean_length": 424.995,
+ "wall_s": 22.4,
+ "weights": "runs/astra/seaquest/attempt2/weights.npz",
+ "statements": 181,
+ "applied": 181,
+ "nonzero_total": 1269
+}

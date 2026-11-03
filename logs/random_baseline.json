@@ -1,0 +1,23 @@
+{
+ "asterix": {
+  "episodes": 1000,
+  "mean": 0.534,
+  "se": 0.028664711156152715,
+  "max": 6.0,
+  "mean_length": 70.996
+ },
+ "breakout": {
+  "episodes": 1000,
+  "mean": 0.491,
+  "se": 0.022235409000362763,
+  "max": 4.0,
+  "mean_length": 10.99
+ },
+ "seaquest": {
+  "episodes": 1000,
+  "mean": 0.096,
+  "se": 0.012686407881861003,
+  "max": 4.0,
+  "mean_length": 28.478
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "game": "seaquest",
+ "weights": "ref/exp5/networks/seaquest.npz",
+ "episodes": 1000,
+ "mean": 54.027,
+ "se": 1.3650991783627908,
+ "max": 185.0,
+ "mean_length": 1435.976,
+ "wall_s": 59.9
+}

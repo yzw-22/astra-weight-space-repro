@@ -1,0 +1,5 @@
+minatar==1.0.15
+gym==0.26.2
+numpy>=2.0
+openai>=1.0
+matplotlib>=3.7

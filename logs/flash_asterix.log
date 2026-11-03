@@ -1,0 +1,12 @@
+
+=== asterix attempt 1/3 (prompt 10930 chars, model deepseek-flash) ===
+  [llm] attempt 1 failed: Connection error.
+--- asterix attempt1: ok mean=7.1 ± 0.2 (13.9s)
+
+=== asterix attempt 2/3 (prompt 10930 chars, model deepseek-flash) ===
+--- asterix attempt2: ok mean=3.3 ± 0.1 (4.6s)
+
+=== asterix attempt 3/3 (prompt 10930 chars, model deepseek-flash) ===
+--- asterix attempt3: ok mean=8.4 ± 0.3 (8.8s)
+
+asterix: mean 6.2 ± 1.5 over 3 attempt(s)

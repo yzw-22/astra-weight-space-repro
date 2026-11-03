@@ -1,0 +1,10 @@
+{
+ "game": "breakout",
+ "weights": "ref/exp5/networks/breakout.npz",
+ "episodes": 1000,
+ "mean": 502.88,
+ "se": 7.747379136423071,
+ "max": 821.0,
+ "mean_length": 7188.392,
+ "wall_s": 179.9
+}

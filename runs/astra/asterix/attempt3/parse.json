@@ -1,0 +1,18 @@
+{
+ "found_block": true,
+ "statements": 170,
+ "applied": 170,
+ "entries_written": 874,
+ "errors": [],
+ "truncated": false,
+ "nonzero": {
+  "W1": 480,
+  "b1": 32,
+  "W2": 214,
+  "b2": 31,
+  "W3": 31,
+  "b3": 6
+ },
+ "nonzero_total": 794,
+ "parameters": 20486
+}

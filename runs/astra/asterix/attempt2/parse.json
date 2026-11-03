@@ -1,0 +1,79 @@
+{
+ "found_block": true,
+ "statements": 132,
+ "applied": 120,
+ "entries_written": 1120,
+ "errors": [
+  {
+   "line": 94,
+   "stmt": "W2[24, 0:3] -= [0.25, 0.25, 0.05]",
+   "err": "augmented assignment expects a scalar"
+  },
+  {
+   "line": 95,
+   "stmt": "W2[25, 2:4] -= [0.2, 0.05]",
+   "err": "augmented assignment expects a scalar"
+  },
+  {
+   "line": 96,
+   "stmt": "W2[26, 3:5] -= [0.2, 0.05]",
+   "err": "augmented assignment expects a scalar"
+  },
+  {
+   "line": 97,
+   "stmt": "W2[27, 4:6] -= [0.2, 0.05]",
+   "err": "augmented assignment expects a scalar"
+  },
+  {
+   "line": 98,
+   "stmt": "W2[28, 5:7] -= [0.2, 0.05]",
+   "err": "augmented assignment expects a scalar"
+  },
+  {
+   "line": 99,
+   "stmt": "W2[29, 6:8] -= [0.2, 0.05]",
+   "err": "augmented assignment expects a scalar"
+  },
+  {
+   "line": 102,
+   "stmt": "W2[26, 8:10] -= [0.05, 0.2]",
+   "err": "augmented assignment expects a scalar"
+  },
+  {
+   "line": 103,
+   "stmt": "W2[27, 9:11] -= [0.05, 0.2]",
+   "err": "augmented assignment expects a scalar"
+  },
+  {
+   "line": 104,
+   "stmt": "W2[28, 10:12] -= [0.05, 0.2]",
+   "err": "augmented assignment expects a scalar"
+  },
+  {
+   "line": 105,
+   "stmt": "W2[29, 11:13] -= [0.05, 0.2]",
+   "err": "augmented assignment expects a scalar"
+  },
+  {
+   "line": 106,
+   "stmt": "W2[30, 12:14] -= [0.05, 0.2]",
+   "err": "augmented assignment expects a scalar"
+  },
+  {
+   "line": 107,
+   "stmt": "W2[31, 13:16] -= [0.05, 0.25, 0.25]",
+   "err": "augmented assignment expects a scalar"
+  }
+ ],
+ "truncated": false,
+ "nonzero": {
+  "W1": 392,
+  "b1": 32,
+  "W2": 448,
+  "b2": 32,
+  "W3": 32,
+  "b3": 6
+ },
+ "nonzero_total": 942,
+ "parameters": 20486
+}

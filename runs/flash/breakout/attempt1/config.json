@@ -1,0 +1,11 @@
+{
+ "game": "breakout",
+ "model": "deepseek-flash",
+ "reasoning_effort": "max",
+ "temperature": 1.0,
+ "max_tokens": 131072,
+ "attempt": 1,
+ "prompt_sha1": "c340c3ec590f4ebeb651f9b3e17e7eb721a3cce8",
+ "prompt_chars": 9973,
+ "started": 1793689004
+}
