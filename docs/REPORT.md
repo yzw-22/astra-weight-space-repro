@@ -77,6 +77,8 @@ record the applied/emitted statement ratio for exactly this reason.
 | Asterix | 0.53 | 25.8 | 55.2 | 53.2 | **58.2 ± 8.7** | 6.2 ± 1.5 | 1.4 ± 0.7 |
 | Seaquest | 0.10 | 5.6 | 88.9 | 53.1 | **28.9 ± 7.5** | 0.3 ± 0.2 | 0.6 ± 0.1 |
 
+![Scores and the score decomposition](../figures/out/fig1_scores.png)
+
 Values are mean ± SE over the three attempts. ¹ Random is measured with this
 harness (1,000 episodes, [`logs/random_baseline.json`](../logs/random_baseline.json));
 the PPO baselines are quoted from the paper.
@@ -146,6 +148,8 @@ is essentially a survival-time measurement:
 | Flash (best): landing column with **wall bounce only** | 1,057 | 0.066 | 69.8 |
 | Flash (others): **current ball column** tracking | 165–168 | 0.077–0.083 | 12.6–13.9 |
 | V4-Pro: current ball column tracking | 53–98 | 0.083–0.085 | 4.5–8.4 |
+
+![Survival by look-ahead depth, and the three samples per point](../figures/out/fig2_depth_variance.png)
 
 Each additional layer of prediction multiplies survival by roughly 6–8×:
 current column → wall projection → brick-bounce-aware projection. Astra's reply
@@ -270,6 +274,7 @@ Breakout) are well inside the noise.
 | `code/report.py` | rebuilds the per-arm result tables |
 | `runs/<arm>/<game>/attempt<k>/` | `config.json`, `prompt.txt`, `reply.md`, `usage.json`, `parse.json`, `weights.npz`, `eval.json` |
 | `logs/` | console logs for most arm × game pairs (`astra_*`, `flash_*`, `v4pro_*`) and the reference-replay scores |
+| `figures/` | the two figures in this report and `make_figures.py`, which renders them from `runs/` |
 | `ref/exp5/` | the authors' released artifacts — prompts, replies, weights, their harness logs and `src/` ([source](https://github.com/RikiyaT/lm_understand-logs)) |
 
 ## Appendix B — Reproducing this report
